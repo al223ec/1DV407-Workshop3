@@ -1,0 +1,7 @@
+C:\Users\Anton\Google Drive\Webbprogrammering Kalmar\År 2\Objektorienterad Analys & Design\BlackJack_C\BlackJack\bin\Debug\BlackJack.exe
+C:\Users\Anton\Google Drive\Webbprogrammering Kalmar\År 2\Objektorienterad Analys & Design\BlackJack_C\BlackJack\bin\Debug\BlackJack.pdb
+C:\Users\Anton\Google Drive\Webbprogrammering Kalmar\År 2\Objektorienterad Analys & Design\BlackJack_C\BlackJack\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
+C:\Users\Anton\Google Drive\Webbprogrammering Kalmar\År 2\Objektorienterad Analys & Design\BlackJack_C\BlackJack\obj\Debug\BlackJack.exe
+C:\Users\Anton\Google Drive\Webbprogrammering Kalmar\År 2\Objektorienterad Analys & Design\BlackJack_C\BlackJack\obj\Debug\BlackJack.pdb
+C:\Users\Anton\Google Drive\Webbprogrammering Kalmar\År 2\Objektorienterad Analys & Design\1DV407-Workshop3\obj\Debug\BlackJack.exe
+C:\Users\Anton\Google Drive\Webbprogrammering Kalmar\År 2\Objektorienterad Analys & Design\1DV407-Workshop3\obj\Debug\BlackJack.pdb
