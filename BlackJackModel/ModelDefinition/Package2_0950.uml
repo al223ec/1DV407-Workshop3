@@ -104,5 +104,56 @@
         </suppliersInternal>
       </class>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6b4afa5f-aa0d-4a74-8b38-4459f0a7838a"
+        name="InternationalNewGameStrategy1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="a9d0db60-bd45-4d82-825a-1e8acc1cfce5"
+        name="IOnDrawStrategy"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7eee7848-00d8-4670-a621-acf629a354d7"
+        name="DealerWinsOnDrawStrategy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="a1c2b124-54d7-422f-b493-79bb691f4011">
+            <interfaceMoniker
+              Id="a9d0db60-bd45-4d82-825a-1e8acc1cfce5"
+              LastKnownName="IOnDrawStrategy"
+              LastKnownLocation="Package2_0950.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f4c06629-78d1-44e6-aa51-cd3299e1ac93"
+        name="PlayerWinsOnDrawStrategy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="51b6676a-5f6c-4919-a4b6-e50d5421fd0d">
+            <interfaceMoniker
+              Id="a9d0db60-bd45-4d82-825a-1e8acc1cfce5"
+              LastKnownName="IOnDrawStrategy"
+              LastKnownLocation="Package2_0950.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
   </packagedElements>
 </package>

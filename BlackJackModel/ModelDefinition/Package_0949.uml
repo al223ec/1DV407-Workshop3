@@ -12,6 +12,13 @@
         isLeaf="false"
         isActiveClass="false">
         <suppliersInternal>
+          <interfaceRealization
+            Id="c5939108-e87e-48ec-b0d9-977666705dca">
+            <interfaceMoniker
+              Id="92d006a5-6f6c-41f5-bff0-a3d13c3456ab"
+              LastKnownName="IObserver"
+              LastKnownLocation="Package_0949.uml" />
+          </interfaceRealization>
           <dependency
             Id="9005e116-bc4e-4496-9ac1-df5cee2ef38e">
             <interfaceMoniker
@@ -28,6 +35,13 @@
           </dependency>
         </suppliersInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="92d006a5-6f6c-41f5-bff0-a3d13c3456ab"
+        name="IObserver"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
 </package>

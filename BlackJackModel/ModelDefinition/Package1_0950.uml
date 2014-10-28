@@ -226,6 +226,67 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="9bc084f8-abcf-4ac5-b1e4-b46dc2f1dc64"
+            isDerived="false"
+            sourceEndRoleName=" "
+            targetEndRoleName="m_onDrawRule"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="a9d0db60-bd45-4d82-825a-1e8acc1cfce5"
+              LastKnownName="IOnDrawStrategy"
+              LastKnownLocation="Package2_0950.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ae8550e5-1682-4806-8f77-7da9b9351cf4"
+                  name=" "
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3b55152b-f5e1-4deb-a51d-582f07a0f141"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="dc7bf4f9-db3e-4c60-81dc-ebd28418c2cb"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3b1f5b63-ec22-4b3a-869d-311a5b4ad7f6"
+                  name="m_onDrawRule"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="fe7d546c-e133-47ce-8fa6-02a0a9dd735a"
+                      name="Lower" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="48a30ded-170c-479d-9f25-f418f1cc7141"
+                      name="Upper" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </class>
     </packageHasNamedElement>
@@ -309,6 +370,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="73e30a31-c7bf-486f-98b2-726c51c7335e">
+            <interfaceMoniker
+              Id="9f187547-7065-4458-a866-54503f4c7515"
+              LastKnownName="IObservable"
+              LastKnownLocation="Package1_0950.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
         <targetEnds>
           <association
             Id="4e104d3a-3dd0-4e57-b8cb-0ec9d65fa0ab"
@@ -505,6 +575,13 @@
           </association>
         </targetEnds>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="9f187547-7065-4458-a866-54503f4c7515"
+        name="IObservable"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
 </package>

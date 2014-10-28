@@ -36,6 +36,13 @@
         LastKnownName="model"
         LastKnownLocation="Package1_0950.uml" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="3304ca9c-9fa8-40f1-843b-4669d072c221"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
