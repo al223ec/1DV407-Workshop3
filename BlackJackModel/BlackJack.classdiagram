@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ce6ab5ad-19fd-4084-80ad-80094c6e032b" name="BlackJack" linkedPackageId="c879b0ba-216b-4f86-a1b3-4869d9637133" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="ce6ab5ad-19fd-4084-80ad-80094c6e032b" name="BlackJack" linkedPackageId="c879b0ba-216b-4f86-a1b3-4869d9637133" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasPackages>
       <package Id="67210203-217c-4952-b91e-e329c1623f52" name="controller">
@@ -153,6 +153,10 @@
                         <classMoniker Id="73591a3e-d54f-4d91-a0ba-875dc6204c60" LastKnownName="PlayerWinsOnDrawStrategy" />
                         <elementDefinition Id="2e696bf9-5191-42f9-818d-79bc485939c7" />
                       </dependency>
+                      <dependency Id="6d6c1ee7-3a76-4e39-a38d-b32e6cf9ffa5">
+                        <classMoniker Id="e6f0b253-8ff5-418c-9ada-60ef89df7539" LastKnownName="SoftHitStrategy" />
+                        <elementDefinition Id="8c01079a-b2e3-4617-8a69-8c07d93bfe07" />
+                      </dependency>
                     </suppliersInternal>
                   </class>
                 </packageHasNamedElement>
@@ -179,6 +183,17 @@
                       <interfaceRealization Id="104e7129-ed77-4488-a72f-535d0160984e">
                         <interfaceMoniker Id="6426f8bf-79f7-4ba5-a81c-4451e529d79b" LastKnownName="IOnDrawStrategy" />
                         <elementDefinition Id="51b6676a-5f6c-4919-a4b6-e50d5421fd0d" />
+                      </interfaceRealization>
+                    </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="e6f0b253-8ff5-418c-9ada-60ef89df7539" name="SoftHitStrategy" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="ebdb60fd-65ab-492f-aafb-7c11c8453c94" />
+                    <suppliersInternal>
+                      <interfaceRealization Id="c2d9268d-7cd0-4569-9802-21efba26829d">
+                        <interfaceMoniker Id="22acfdec-0761-4843-b8bc-fed534391061" LastKnownName="IHitStrategy" />
+                        <elementDefinition Id="dd36b2b6-4fa3-406c-9d2c-48cd39ea6559" />
                       </interfaceRealization>
                     </suppliersInternal>
                   </class>
