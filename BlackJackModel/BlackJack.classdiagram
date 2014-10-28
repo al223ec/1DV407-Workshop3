@@ -145,6 +145,14 @@
                         <classMoniker Id="66dbb5c1-8fee-4479-bae9-38c874f43ffe" LastKnownName="BasicHitStrategy" />
                         <elementDefinition Id="b84f68a1-bf94-4f25-968c-950ccefeeca8" />
                       </dependency>
+                      <dependency Id="1da06603-5f0e-43f3-a4b8-49f4d32a3caf">
+                        <classMoniker Id="beb0a927-c00b-4f36-9971-a167557c26a2" LastKnownName="DealerWinsOnDrawStrategy" />
+                        <elementDefinition Id="d68f9f3c-011e-4d57-bebe-2084def679bf" />
+                      </dependency>
+                      <dependency Id="bffc575c-644a-4b00-a9c2-3277868f5579">
+                        <classMoniker Id="73591a3e-d54f-4d91-a0ba-875dc6204c60" LastKnownName="PlayerWinsOnDrawStrategy" />
+                        <elementDefinition Id="2e696bf9-5191-42f9-818d-79bc485939c7" />
+                      </dependency>
                     </suppliersInternal>
                   </class>
                 </packageHasNamedElement>

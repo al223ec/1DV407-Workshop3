@@ -101,6 +101,20 @@
               LastKnownName="BasicHitStrategy"
               LastKnownLocation="Package2_0950.uml" />
           </dependency>
+          <dependency
+            Id="d68f9f3c-011e-4d57-bebe-2084def679bf">
+            <classMoniker
+              Id="7eee7848-00d8-4670-a621-acf629a354d7"
+              LastKnownName="DealerWinsOnDrawStrategy"
+              LastKnownLocation="Package2_0950.uml" />
+          </dependency>
+          <dependency
+            Id="2e696bf9-5191-42f9-818d-79bc485939c7">
+            <classMoniker
+              Id="f4c06629-78d1-44e6-aa51-cd3299e1ac93"
+              LastKnownName="PlayerWinsOnDrawStrategy"
+              LastKnownLocation="Package2_0950.uml" />
+          </dependency>
         </suppliersInternal>
       </class>
     </packageHasNamedElement>
