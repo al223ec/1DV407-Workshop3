@@ -14,7 +14,6 @@ namespace BlackJack.model
     class Player : IObservable
     {
         private IObserver observer; 
-
         private List<Card> m_hand = new List<Card>();
 
         public IEnumerable<Card> GetHand()
