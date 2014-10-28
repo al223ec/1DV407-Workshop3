@@ -581,7 +581,17 @@
         Id="9f187547-7065-4458-a866-54503f4c7515"
         name="IObservable"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="2b98b27b-e262-40f6-b86c-af6620aa5a9c">
+            <interfaceMoniker
+              Id="92d006a5-6f6c-41f5-bff0-a3d13c3456ab"
+              LastKnownName="IObserver"
+              LastKnownLocation="Package_0949.uml" />
+          </dependency>
+        </suppliersInternal>
+      </Interface>
     </packageHasNamedElement>
   </packagedElements>
 </package>

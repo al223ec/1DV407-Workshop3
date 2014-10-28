@@ -27,6 +27,12 @@
           <packageHasNamedElement>
             <Interface Id="63ebfad5-82ff-466a-99e2-8e794fd6e953" name="IObserver" isAbstract="false" isLeaf="false">
               <elementDefinition Id="92d006a5-6f6c-41f5-bff0-a3d13c3456ab" />
+              <suppliersInternal>
+                <dependency Id="9b89bd4e-ebc2-42a8-8829-63cd61cfe952">
+                  <interfaceMoniker Id="e4d4e097-a856-42bd-8c26-10f007e0a207" LastKnownName="IObservable" />
+                  <elementDefinition Id="74162333-a6de-4116-89cf-bf4db8606986" />
+                </dependency>
+              </suppliersInternal>
             </Interface>
           </packageHasNamedElement>
         </packagedElements>
@@ -514,6 +520,12 @@
           <packageHasNamedElement>
             <Interface Id="e4d4e097-a856-42bd-8c26-10f007e0a207" name="IObservable" isAbstract="false" isLeaf="false">
               <elementDefinition Id="9f187547-7065-4458-a866-54503f4c7515" />
+              <suppliersInternal>
+                <dependency Id="f0851d85-6aed-48f3-8c7a-fcfdade66680">
+                  <interfaceMoniker Id="63ebfad5-82ff-466a-99e2-8e794fd6e953" LastKnownName="IObserver" />
+                  <elementDefinition Id="2b98b27b-e262-40f6-b86c-af6620aa5a9c" />
+                </dependency>
+              </suppliersInternal>
             </Interface>
           </packageHasNamedElement>
         </packagedElements>
