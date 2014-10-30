@@ -36,27 +36,26 @@ namespace BlackJack.view
                 return 'q';
             }
         }
- 
 
-        public void DisplayWelcomeMessage()
+
+        public override void DisplayWelcomeMessage()
         {
-            System.Console.Clear();
             System.Console.WriteLine("Hello Black Jack World");
             System.Console.WriteLine("Type 'p' to Play, 'h' to Hit, 's' to Stand or 'q' to Quit\n");
         }
 
 
-        public void DisplayCard(model.Card a_card)
+        public override void DisplayCard(model.Card a_card)
         {
             System.Console.WriteLine("{0} of {1}", a_card.GetValue(), a_card.GetColor());
         }
 
-        public void DisplayPlayerHand(IEnumerable<model.Card> a_hand, int a_score)
+        public override void DisplayPlayerHand(IEnumerable<model.Card> a_hand, int a_score)
         {
             DisplayHand("Player", a_hand, a_score);
         }
 
-        public void DisplayDealerHand(IEnumerable<model.Card> a_hand, int a_score)
+        public override void DisplayDealerHand(IEnumerable<model.Card> a_hand, int a_score)
         {
             DisplayHand("Dealer", a_hand, a_score);
         }
@@ -72,7 +71,7 @@ namespace BlackJack.view
             System.Console.WriteLine("");
         }
 
-        public void DisplayGameOver(bool a_dealerIsWinner)
+        public override void DisplayGameOver(bool a_dealerIsWinner)
         {
             System.Console.Write("GameOver: ");
             if (a_dealerIsWinner)

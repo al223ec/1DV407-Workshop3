@@ -11,5 +11,10 @@ namespace BlackJack.model.rules
         {
             return false;
         }
+
+        public void Accept(IRuleElementVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
     }
 }

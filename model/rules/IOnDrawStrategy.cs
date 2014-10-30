@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BlackJack.model.rules
 {
-    interface IOnDrawStrategy
+    interface IOnDrawStrategy : IRuleElement
     {
         bool DealerWins();
     }

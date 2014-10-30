@@ -16,5 +16,10 @@ namespace BlackJack.model.rules
             a_player.DealCard(a_deck, true);
             return true;
         }
+
+        public void Accept(IRuleElementVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
     }
 }

@@ -14,5 +14,9 @@ namespace BlackJack.model.rules
             var gotAce = a_dealer.GetHand().FirstOrDefault(c => c.GetValue() == BlackJack.model.Card.Value.Ace);
             return ((a_dealer.CalcScore() < g_hitLimit) || a_dealer.CalcScore() == g_hitLimit && gotAce != null);
         }
+        public void Accept(IRuleElementVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
     }
 }

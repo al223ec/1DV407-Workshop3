@@ -1,11 +1,12 @@
-﻿using System;
+﻿using BlackJack.model.rules;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 namespace BlackJack.view
 {
-    abstract class BaseView 
+    abstract class BaseView  : IView
     {
         protected abstract char hit
         {
@@ -26,7 +27,17 @@ namespace BlackJack.view
 
         public int GetInput()
         {
-            return (int)System.Console.ReadKey().KeyChar;
+            return System.Console.Read(); 
+        }
+
+        public void Clear()
+        {
+            Console.Clear(); 
+        }
+
+        public void ContinueOnEnter()
+        {
+            Console.ReadLine(); 
         }
 
 
@@ -46,6 +57,26 @@ namespace BlackJack.view
         {
             return quit == input;
         }
-    
+
+
+        public void Visit(IHitStrategy hitStrategy)
+        {
+            Console.WriteLine(hitStrategy); 
+        }
+
+        public void Visit(INewGameStrategy newGameStrategy)
+        {
+            Console.WriteLine(newGameStrategy); 
+        }
+
+        public void Visit(IOnDrawStrategy onDrawStrategy)
+        {
+            Console.WriteLine(onDrawStrategy); 
+        }
+        public abstract void DisplayWelcomeMessage();
+        public abstract void DisplayCard(model.Card a_card);
+        public abstract void DisplayPlayerHand(IEnumerable<model.Card> a_hand, int a_score);
+        public abstract void DisplayDealerHand(IEnumerable<model.Card> a_hand, int a_score);
+        public abstract void DisplayGameOver(bool a_dealerIsWinner);
     }
 }

@@ -34,7 +34,31 @@
         Id="7f7445a6-4eaf-4d4b-893c-5243754ba636"
         name="INewGameStrategy"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="3c424ee4-d534-4124-8374-58d8b438a0db">
+            <classMoniker
+              Id="aaf1cdbb-b246-4674-8bd7-c2ffcaeb6374"
+              LastKnownName="Dealer"
+              LastKnownLocation="Package1_0950.uml" />
+          </dependency>
+          <dependency
+            Id="7f9e3703-8e86-47cf-bbc6-d1e6239e259e">
+            <classMoniker
+              Id="06cd8108-1c58-4959-aa2a-814dbf8ef652"
+              LastKnownName="Deck"
+              LastKnownLocation="Package1_0950.uml" />
+          </dependency>
+          <dependency
+            Id="584f060b-ee34-4d89-b8f9-213378adc818">
+            <classMoniker
+              Id="e9cbcc72-94a8-4282-bffd-840431d0119d"
+              LastKnownName="Player"
+              LastKnownLocation="Package1_0950.uml" />
+          </dependency>
+        </suppliersInternal>
+      </Interface>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class

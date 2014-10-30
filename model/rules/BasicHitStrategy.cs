@@ -13,5 +13,9 @@ namespace BlackJack.model.rules
         {
             return a_dealer.CalcScore() < g_hitLimit;
         }
+        public void Accept(IRuleElementVisitor visitor)
+        {
+            visitor.Visit(this);
+        }
     }
 }

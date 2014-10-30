@@ -36,16 +36,15 @@ namespace BlackJack.view
                 return 'q';
             }
         }
- 
-        public void DisplayWelcomeMessage()
+
+        public override void DisplayWelcomeMessage()
         {
-            System.Console.Clear();
             System.Console.WriteLine("Hej Black Jack Världen");
             System.Console.WriteLine("----------------------");
             System.Console.WriteLine("Skriv '{0}' för att Spela, '{1}' för nytt kort, '{2}' för att stanna '{3}' för att avsluta\n", play, hit, stand, quit);
         }
 
-        public void DisplayCard(model.Card a_card)
+        public override void DisplayCard(model.Card a_card)
         {
             if (a_card.GetColor() == model.Card.Color.Hidden)
             {
@@ -60,15 +59,15 @@ namespace BlackJack.view
                 System.Console.WriteLine("{0} {1}", colors[(int)a_card.GetColor()], values[(int)a_card.GetValue()]);
             }
         }
-        public void DisplayPlayerHand(IEnumerable<model.Card> a_hand, int a_score)
+        public override void DisplayPlayerHand(IEnumerable<model.Card> a_hand, int a_score)
         {
             DisplayHand("Spelare", a_hand, a_score);
         }
-        public void DisplayDealerHand(IEnumerable<model.Card> a_hand, int a_score)
+        public override void DisplayDealerHand(IEnumerable<model.Card> a_hand, int a_score)
         {
             DisplayHand("Croupier", a_hand, a_score);
         }
-        public void DisplayGameOver(bool a_dealerIsWinner)
+        public override void DisplayGameOver(bool a_dealerIsWinner)
         {
             System.Console.Write("Slut: ");
             if (a_dealerIsWinner)

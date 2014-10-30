@@ -10,9 +10,9 @@ namespace BlackJack.model
         private model.Dealer m_dealer;
         private model.Player m_player;
 
-        public Game()
+        public Game(rules.RulesFactory a_rulesFactory)
         {
-            m_dealer = new Dealer(new BlackJack.model.rules.RulesFactory());
+            m_dealer = new Dealer(a_rulesFactory);
             m_player = new Player();
             //m_dealer = a_dealer; 
             //m_player = a_player;  

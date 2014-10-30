@@ -5,24 +5,19 @@ using System.Text;
 
 namespace BlackJack.model.rules
 {
-    class RulesFactory
+    abstract class RulesFactory
     {
-        public IHitStrategy GetHitRule()
-        {
-            //return new BasicHitStrategy();
-            return new SoftHitStrategy();
-        }
+        public abstract IHitStrategy GetHitRule(); 
 
-        public INewGameStrategy GetNewGameRule()
-        {
-            return new AmericanNewGameStrategy();
-        }
+        public abstract INewGameStrategy GetNewGameRule(); 
 
-        public IOnDrawStrategy GetDrawRule()
-        {
-            return new PlayerWinsOnDrawStrategy();
-            //return new DealerWinsOnDrawStrategy();
-        }
+        public abstract IOnDrawStrategy GetDrawRule();
 
+        public void Accept(IRuleElementVisitor visitor)
+        {
+            GetHitRule().Accept(visitor);
+            GetNewGameRule().Accept(visitor);
+            GetDrawRule().Accept(visitor); 
+        }
     }
 }

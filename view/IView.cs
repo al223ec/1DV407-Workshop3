@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BlackJack.model.rules;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,8 @@ using System.Text;
 namespace BlackJack.view
 {
 
-    interface IView
+    interface IView : IRuleElementVisitor
     {
-
         void DisplayWelcomeMessage();
 
         int GetInput();
@@ -17,6 +17,9 @@ namespace BlackJack.view
         void DisplayDealerHand(IEnumerable<model.Card> a_hand, int a_score);
         void DisplayGameOver(bool a_dealerIsWinner);
 
+        void Clear();
+
+        void ContinueOnEnter(); 
         bool NewGame(int input);
         bool Stand(int input);
         bool Hit(int input);
