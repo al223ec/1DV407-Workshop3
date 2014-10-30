@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
   dslVersion="1.0.0.0"
   Id="c453c530-6efa-4957-9d62-7cca90019d1a"
   name="rules" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -9,7 +9,18 @@
         Id="550cd927-6beb-4715-ac7e-1afec083ec6b"
         name="IHitStrategy"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="2a60ad5b-e6b8-4c87-9b52-b196e763ad58"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="340de6a7-7b0d-461a-9b9d-19423bb2efe5"
+              LastKnownName="IRuleElement"
+              LastKnownLocation="Package1_0950.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -58,6 +69,16 @@
               LastKnownLocation="Package1_0950.uml" />
           </dependency>
         </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="49a9c548-71a8-4505-a282-1fc7da513783"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="340de6a7-7b0d-461a-9b9d-19423bb2efe5"
+              LastKnownName="IRuleElement"
+              LastKnownLocation="Package1_0950.uml" />
+          </generalization>
+        </generalsInternal>
       </Interface>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -100,7 +121,7 @@
       <class
         Id="274aad89-4b81-46c6-a61d-54ff6d7a1d51"
         name="RulesFactory"
-        isAbstract="false"
+        isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
         <suppliersInternal>
@@ -162,7 +183,18 @@
         Id="a9d0db60-bd45-4d82-825a-1e8acc1cfce5"
         name="IOnDrawStrategy"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <generalsInternal>
+          <generalization
+            Id="088ff660-dbcf-4d00-8560-a106a7fb4055"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="340de6a7-7b0d-461a-9b9d-19423bb2efe5"
+              LastKnownName="IRuleElement"
+              LastKnownLocation="Package1_0950.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -216,6 +248,44 @@
               LastKnownLocation="Package2_0950.uml" />
           </interfaceRealization>
         </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f40fb917-0efb-4c35-ba5d-fded4495d51e"
+        name="StandardRulesFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="fa0f81c8-5648-4a8c-805d-d6830c62018a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="274aad89-4b81-46c6-a61d-54ff6d7a1d51"
+              LastKnownName="RulesFactory"
+              LastKnownLocation="Package2_0950.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fcdb24df-ac7a-451e-88d3-5554c1dac820"
+        name="WeirdRulesFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="f803608e-371b-4f17-bbe5-8632c14004cb"
+            isSubstitutable="false">
+            <classMoniker
+              Id="274aad89-4b81-46c6-a61d-54ff6d7a1d51"
+              LastKnownName="RulesFactory"
+              LastKnownLocation="Package2_0950.uml" />
+          </generalization>
+        </generalsInternal>
       </class>
     </packageHasNamedElement>
   </packagedElements>

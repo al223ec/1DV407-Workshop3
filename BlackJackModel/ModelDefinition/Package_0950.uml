@@ -19,6 +19,16 @@
               LastKnownLocation="Package1_0950.uml" />
           </dependency>
         </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="3362d5ef-11f0-4006-b167-fa1bc033e2f5"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="272d9412-c119-421b-b91e-1d19cd6bf444"
+              LastKnownName="IRuleElementVisitor"
+              LastKnownLocation="Package1_0950.uml" />
+          </generalization>
+        </generalsInternal>
       </Interface>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -28,15 +38,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <suppliersInternal>
-          <interfaceRealization
-            Id="ff7d3f8d-a246-4bb1-8c24-a998959af77a">
-            <interfaceMoniker
-              Id="daa2b7a8-1024-4de0-8428-0008d3ffa08b"
-              LastKnownName="IView"
+        <generalsInternal>
+          <generalization
+            Id="294a06b3-6f14-41e4-9c99-49c07e62a0bc"
+            isSubstitutable="false">
+            <classMoniker
+              Id="cb9ba9dc-ad9c-4ebc-9378-ecd250527d5a"
+              LastKnownName="BaseView"
               LastKnownLocation="Package_0950.uml" />
-          </interfaceRealization>
-        </suppliersInternal>
+          </generalization>
+        </generalsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -46,9 +57,28 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="71a3b4f4-4888-43a1-90fc-8f0b094b88af"
+            isSubstitutable="false">
+            <classMoniker
+              Id="cb9ba9dc-ad9c-4ebc-9378-ecd250527d5a"
+              LastKnownName="BaseView"
+              LastKnownLocation="Package_0950.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cb9ba9dc-ad9c-4ebc-9378-ecd250527d5a"
+        name="BaseView"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
         <suppliersInternal>
           <interfaceRealization
-            Id="1df8f863-00dd-4dd2-b01c-2e5b09eed6f1">
+            Id="4652122f-4a5b-4839-b9c4-d52851929202">
             <interfaceMoniker
               Id="daa2b7a8-1024-4de0-8428-0008d3ffa08b"
               LastKnownName="IView"

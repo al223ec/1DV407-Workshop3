@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="ce6ab5ad-19fd-4084-80ad-80094c6e032b" name="BlackJack" linkedPackageId="c879b0ba-216b-4f86-a1b3-4869d9637133" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ce6ab5ad-19fd-4084-80ad-80094c6e032b" name="BlackJack" linkedPackageId="c879b0ba-216b-4f86-a1b3-4869d9637133" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasPackages>
       <package Id="67210203-217c-4952-b91e-e329c1623f52" name="controller">
@@ -117,26 +117,43 @@
                   <elementDefinition Id="2f231c89-6947-4a76-90eb-d230987cc959" />
                 </dependency>
               </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="ebf83189-3d75-4e22-89d3-5d4c9c413a37" isSubstitutable="false">
+                  <interfaceMoniker Id="48ff6968-638f-4656-9a13-1db3eb55db7c" LastKnownName="IRuleElementVisitor" />
+                  <elementDefinition Id="3362d5ef-11f0-4006-b167-fa1bc033e2f5" />
+                </generalization>
+              </generalsInternal>
             </Interface>
           </packageHasNamedElement>
           <packageHasNamedElement>
             <class Id="7e3cdd11-9d9d-49a6-88f3-b4e0f5782843" name="SimpleView" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="afa99da5-525e-4ae4-a236-a8012ef9ef5d" />
-              <suppliersInternal>
-                <interfaceRealization Id="9376a0c2-7e2e-421c-af9f-9b607aec43d2">
-                  <interfaceMoniker Id="49023794-8173-4e5f-9096-ef51806baeea" LastKnownName="IView" />
-                  <elementDefinition Id="ff7d3f8d-a246-4bb1-8c24-a998959af77a" />
-                </interfaceRealization>
-              </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="375a5727-db01-4c49-8e72-3dc8d0f4a3a0" isSubstitutable="false">
+                  <classMoniker Id="d3d3b81d-59ec-4b57-82b3-2de04901daa4" LastKnownName="BaseView" />
+                  <elementDefinition Id="294a06b3-6f14-41e4-9c99-49c07e62a0bc" />
+                </generalization>
+              </generalsInternal>
             </class>
           </packageHasNamedElement>
           <packageHasNamedElement>
             <class Id="adc0b940-ffc6-484a-90b4-7501cb352dff" name="SwedishView" isAbstract="false" isLeaf="false" isActiveClass="false">
               <elementDefinition Id="efdb29fa-3d02-40f4-ae26-44a3d79df8f5" />
+              <generalsInternal>
+                <generalization Id="9d55337e-7b7c-40bc-8b7e-4c2c78619c67" isSubstitutable="false">
+                  <classMoniker Id="d3d3b81d-59ec-4b57-82b3-2de04901daa4" LastKnownName="BaseView" />
+                  <elementDefinition Id="71a3b4f4-4888-43a1-90fc-8f0b094b88af" />
+                </generalization>
+              </generalsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d3d3b81d-59ec-4b57-82b3-2de04901daa4" name="BaseView" isAbstract="true" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="cb9ba9dc-ad9c-4ebc-9378-ecd250527d5a" />
               <suppliersInternal>
-                <interfaceRealization Id="a57d15b0-f4d8-4567-8a65-5801f923515a">
+                <interfaceRealization Id="41e4c820-bc7f-470e-a902-1c5434e6b5fe">
                   <interfaceMoniker Id="49023794-8173-4e5f-9096-ef51806baeea" LastKnownName="IView" />
-                  <elementDefinition Id="1df8f863-00dd-4dd2-b01c-2e5b09eed6f1" />
+                  <elementDefinition Id="4652122f-4a5b-4839-b9c4-d52851929202" />
                 </interfaceRealization>
               </suppliersInternal>
             </class>
@@ -155,6 +172,12 @@
                 <packageHasNamedElement>
                   <Interface Id="22acfdec-0761-4843-b8bc-fed534391061" name="IHitStrategy" isAbstract="false" isLeaf="false">
                     <elementDefinition Id="550cd927-6beb-4715-ac7e-1afec083ec6b" />
+                    <generalsInternal>
+                      <generalization Id="f7627955-942a-4524-9725-21cf416cab80" isSubstitutable="false">
+                        <interfaceMoniker Id="234131c6-715b-4f84-b469-cc477243c0da" LastKnownName="IRuleElement" />
+                        <elementDefinition Id="2a60ad5b-e6b8-4c87-9b52-b196e763ad58" />
+                      </generalization>
+                    </generalsInternal>
                   </Interface>
                 </packageHasNamedElement>
                 <packageHasNamedElement>
@@ -185,6 +208,12 @@
                         <elementDefinition Id="584f060b-ee34-4d89-b8f9-213378adc818" />
                       </dependency>
                     </suppliersInternal>
+                    <generalsInternal>
+                      <generalization Id="93cb55bb-7af8-4d12-ab00-3c2ce19f9654" isSubstitutable="false">
+                        <interfaceMoniker Id="234131c6-715b-4f84-b469-cc477243c0da" LastKnownName="IRuleElement" />
+                        <elementDefinition Id="49a9c548-71a8-4505-a282-1fc7da513783" />
+                      </generalization>
+                    </generalsInternal>
                   </Interface>
                 </packageHasNamedElement>
                 <packageHasNamedElement>
@@ -210,7 +239,7 @@
                   </class>
                 </packageHasNamedElement>
                 <packageHasNamedElement>
-                  <class Id="490c330f-5378-4e7f-8a78-6db4fefcbc44" name="RulesFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+                  <class Id="490c330f-5378-4e7f-8a78-6db4fefcbc44" name="RulesFactory" isAbstract="true" isLeaf="false" isActiveClass="false">
                     <elementDefinition Id="274aad89-4b81-46c6-a61d-54ff6d7a1d51" />
                     <suppliersInternal>
                       <dependency Id="dbbd4ab5-2071-43ea-a013-e6cef9bc7f04">
@@ -243,6 +272,12 @@
                 <packageHasNamedElement>
                   <Interface Id="6426f8bf-79f7-4ba5-a81c-4451e529d79b" name="IOnDrawStrategy" isAbstract="false" isLeaf="false">
                     <elementDefinition Id="a9d0db60-bd45-4d82-825a-1e8acc1cfce5" />
+                    <generalsInternal>
+                      <generalization Id="25c96721-0e3b-4e39-b84d-aa1d4e10d035" isSubstitutable="false">
+                        <interfaceMoniker Id="234131c6-715b-4f84-b469-cc477243c0da" LastKnownName="IRuleElement" />
+                        <elementDefinition Id="088ff660-dbcf-4d00-8560-a106a7fb4055" />
+                      </generalization>
+                    </generalsInternal>
                   </Interface>
                 </packageHasNamedElement>
                 <packageHasNamedElement>
@@ -276,6 +311,28 @@
                         <elementDefinition Id="dd36b2b6-4fa3-406c-9d2c-48cd39ea6559" />
                       </interfaceRealization>
                     </suppliersInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="b348b784-c4c0-49eb-98c0-a6a15a32708c" name="StandardRulesFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="f40fb917-0efb-4c35-ba5d-fded4495d51e" />
+                    <generalsInternal>
+                      <generalization Id="bd71aa2e-492c-4cf4-875b-32478ed891f9" isSubstitutable="false">
+                        <classMoniker Id="490c330f-5378-4e7f-8a78-6db4fefcbc44" LastKnownName="RulesFactory" />
+                        <elementDefinition Id="fa0f81c8-5648-4a8c-805d-d6830c62018a" />
+                      </generalization>
+                    </generalsInternal>
+                  </class>
+                </packageHasNamedElement>
+                <packageHasNamedElement>
+                  <class Id="a000c5d1-4683-4ec0-8f93-bf789bdaecd1" name="WeirdRulesFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+                    <elementDefinition Id="fcdb24df-ac7a-451e-88d3-5554c1dac820" />
+                    <generalsInternal>
+                      <generalization Id="62e5316a-2594-4608-aaf3-e10d840b94c4" isSubstitutable="false">
+                        <classMoniker Id="490c330f-5378-4e7f-8a78-6db4fefcbc44" LastKnownName="RulesFactory" />
+                        <elementDefinition Id="f803608e-371b-4f17-bbe5-8632c14004cb" />
+                      </generalization>
+                    </generalsInternal>
                   </class>
                 </packageHasNamedElement>
               </packagedElements>
@@ -627,6 +684,36 @@
                 <dependency Id="f0851d85-6aed-48f3-8c7a-fcfdade66680">
                   <interfaceMoniker Id="63ebfad5-82ff-466a-99e2-8e794fd6e953" LastKnownName="IObserver" />
                   <elementDefinition Id="2b98b27b-e262-40f6-b86c-af6620aa5a9c" />
+                </dependency>
+              </suppliersInternal>
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="48ff6968-638f-4656-9a13-1db3eb55db7c" name="IRuleElementVisitor" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="272d9412-c119-421b-b91e-1d19cd6bf444" />
+              <suppliersInternal>
+                <dependency Id="010d0f5a-985e-4855-ae07-96579569efb5">
+                  <interfaceMoniker Id="ff9e5ad6-46a4-4253-a8f6-587596ecd8b7" LastKnownName="INewGameStrategy" />
+                  <elementDefinition Id="0c5cfd79-1418-43dc-a0b3-6cf391edc0fd" />
+                </dependency>
+                <dependency Id="5efb72b5-e505-433c-86e2-0352bfba9413">
+                  <interfaceMoniker Id="22acfdec-0761-4843-b8bc-fed534391061" LastKnownName="IHitStrategy" />
+                  <elementDefinition Id="299e4a37-6c72-45a2-9a54-a730de721fb5" />
+                </dependency>
+                <dependency Id="0cb868cc-4b90-4b7b-8b54-3bd8407a31c3">
+                  <interfaceMoniker Id="6426f8bf-79f7-4ba5-a81c-4451e529d79b" LastKnownName="IOnDrawStrategy" />
+                  <elementDefinition Id="e7a334d6-100d-44a9-beb1-fa2ac29ccd96" />
+                </dependency>
+              </suppliersInternal>
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="234131c6-715b-4f84-b469-cc477243c0da" name="IRuleElement" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="340de6a7-7b0d-461a-9b9d-19423bb2efe5" />
+              <suppliersInternal>
+                <dependency Id="849caadd-3a88-45cc-9fa5-29fb4d2315c4">
+                  <interfaceMoniker Id="48ff6968-638f-4656-9a13-1db3eb55db7c" LastKnownName="IRuleElementVisitor" />
+                  <elementDefinition Id="236a161b-4fca-4931-88c3-26ec9d9b23b9" />
                 </dependency>
               </suppliersInternal>
             </Interface>

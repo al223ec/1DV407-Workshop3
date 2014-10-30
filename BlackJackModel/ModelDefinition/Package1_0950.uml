@@ -593,5 +593,53 @@
         </suppliersInternal>
       </Interface>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="272d9412-c119-421b-b91e-1d19cd6bf444"
+        name="IRuleElementVisitor"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="0c5cfd79-1418-43dc-a0b3-6cf391edc0fd">
+            <interfaceMoniker
+              Id="7f7445a6-4eaf-4d4b-893c-5243754ba636"
+              LastKnownName="INewGameStrategy"
+              LastKnownLocation="Package2_0950.uml" />
+          </dependency>
+          <dependency
+            Id="299e4a37-6c72-45a2-9a54-a730de721fb5">
+            <interfaceMoniker
+              Id="550cd927-6beb-4715-ac7e-1afec083ec6b"
+              LastKnownName="IHitStrategy"
+              LastKnownLocation="Package2_0950.uml" />
+          </dependency>
+          <dependency
+            Id="e7a334d6-100d-44a9-beb1-fa2ac29ccd96">
+            <interfaceMoniker
+              Id="a9d0db60-bd45-4d82-825a-1e8acc1cfce5"
+              LastKnownName="IOnDrawStrategy"
+              LastKnownLocation="Package2_0950.uml" />
+          </dependency>
+        </suppliersInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="340de6a7-7b0d-461a-9b9d-19423bb2efe5"
+        name="IRuleElement"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="236a161b-4fca-4931-88c3-26ec9d9b23b9">
+            <interfaceMoniker
+              Id="272d9412-c119-421b-b91e-1d19cd6bf444"
+              LastKnownName="IRuleElementVisitor"
+              LastKnownLocation="Package1_0950.uml" />
+          </dependency>
+        </suppliersInternal>
+      </Interface>
+    </packageHasNamedElement>
   </packagedElements>
 </package>
