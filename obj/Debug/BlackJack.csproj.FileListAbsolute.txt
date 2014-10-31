@@ -10,3 +10,8 @@ C:\Users\al223ec\Desktop\1DV407-Workshop3\obj\Debug\BlackJack.pdb
 C:\Users\al223ec\Desktop\1DV407-Workshop3\bin\Debug\BlackJack.exe
 C:\Users\al223ec\Desktop\1DV407-Workshop3\bin\Debug\BlackJack.pdb
 C:\Users\al223ec\Desktop\1DV407-Workshop3\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
+C:\Users\al223ec.LNU\Desktop\1DV407-Workshop3\obj\Debug\BlackJack.exe
+C:\Users\al223ec.LNU\Desktop\1DV407-Workshop3\obj\Debug\BlackJack.pdb
+C:\Users\al223ec.LNU\Desktop\1DV407-Workshop3\obj\Debug\BlackJack.csprojResolveAssemblyReference.cache
+C:\Users\al223ec.LNU\Desktop\1DV407-Workshop3\bin\Debug\BlackJack.exe
+C:\Users\al223ec.LNU\Desktop\1DV407-Workshop3\bin\Debug\BlackJack.pdb

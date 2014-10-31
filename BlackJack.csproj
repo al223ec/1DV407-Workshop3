@@ -68,6 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="controller\PlayGame.cs" />
+    <Compile Include="model\rules\StandardRulesFactory.cs" />
+    <Compile Include="model\rules\WeirdRulesFactory.cs" />
     <Compile Include="model\Card.cs" />
     <Compile Include="model\Dealer.cs" />
     <Compile Include="model\Deck.cs" />
@@ -84,9 +86,7 @@
     <Compile Include="model\rules\IRuleElementVisitor.cs" />
     <Compile Include="model\rules\PlayerWinsOnDrawStrategy.cs" />
     <Compile Include="model\rules\RulesFactory.cs" />
-    <Compile Include="model\rules\StandardRulesFactory.cs" />
     <Compile Include="model\rules\SoftHitStrategy.cs" />
-    <Compile Include="model\rules\WeirdRulesFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="view\BaseView.cs" />
