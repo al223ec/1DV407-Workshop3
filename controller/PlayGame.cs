@@ -21,7 +21,7 @@ namespace BlackJack.controller
 
             public PlayGame()
             {
-                var rulesFactory = new model.rules.WeirdRulesFactory();   
+                var rulesFactory = new model.rules.StandardRulesFactory();   
                 this.a_view = new view.SwedishView();//new view.SimpleView();
 
                 rulesFactory.Accept(a_view);

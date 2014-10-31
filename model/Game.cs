@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BlackJack.controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,8 +15,6 @@ namespace BlackJack.model
         {
             m_dealer = new Dealer(a_rulesFactory);
             m_player = new Player();
-            //m_dealer = a_dealer; 
-            //m_player = a_player;  
         }
         public Game(model.Dealer a_dealer, model.Player a_player)
         {
@@ -44,7 +43,6 @@ namespace BlackJack.model
         }
 
 
-        
         public bool Stand()
         {
             // TODO: Implement this according to Game_Stand.sequencediagram
@@ -71,6 +69,7 @@ namespace BlackJack.model
             return m_player.CalcScore();
         }
     
+        //Halv privacy leaks
         public IObservable GetPlayer()
         {
  	        return m_player;
@@ -79,5 +78,6 @@ namespace BlackJack.model
         {
  	        return m_dealer;
         }
+
     }
 }
