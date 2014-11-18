@@ -7,8 +7,8 @@
       <FileName>controller\PlayGame.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="a_game" />
       <Field Name="a_view" />
+      <Field Name="a_game" />
     </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
@@ -35,7 +35,7 @@
     <Position X="11.75" Y="9.5" Width="1.5" />
     <InheritanceLine Type="BlackJack.model.Player" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="12.562" Y="9.065" />
+        <Point X="12.562" Y="9.517" />
         <Point X="12.562" Y="9.5" />
       </Path>
     </InheritanceLine>
@@ -51,10 +51,10 @@
       <FileName>model\Dealer.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Field Name="m_onDrawRule" />
+      <Field Name="m_deck" />
       <Field Name="m_newGameRule" />
       <Field Name="m_hitRule" />
-      <Field Name="m_deck" />
+      <Field Name="m_onDrawRule" />
     </ShowAsAssociation>
   </Class>
   <Class Name="BlackJack.model.Deck">
@@ -80,20 +80,10 @@
   </Class>
   <Class Name="BlackJack.model.Player">
     <Position X="11.75" Y="7" Width="1.5" />
-    <AssociationLine Name="observer" Type="BlackJack.controller.IObserver" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="13.25" Y="8.188" />
-        <Point X="14.312" Y="8.188" />
-        <Point X="14.312" Y="6.296" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAAYAAAACAAAAAAAAAACIAAAAAACIAAABAAAAAAAAAA=</HashCode>
       <FileName>model\Player.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Field Name="observer" />
-    </ShowAsAssociation>
     <ShowAsCollectionAssociation>
       <Field Name="m_hand" />
     </ShowAsCollectionAssociation>
@@ -199,13 +189,6 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="BlackJack.controller.IObserver">
-    <Position X="13.5" Y="5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAABAAAAAAAAAAAA=</HashCode>
-      <FileName>controller\PlayGame.cs</FileName>
-    </TypeIdentifier>
-  </Interface>
   <Interface Name="BlackJack.model.IObservable">
     <Position X="15.25" Y="5" Width="1.5" />
     <TypeIdentifier>

@@ -6,10 +6,14 @@ using System.Text;
 
 namespace BlackJack.model
 {
+    public interface IObserver
+    {
+        void Subscribe(IObservable observable);
+        void Notify();
+    }
     public interface IObservable 
     {
         void Subscribe(IObserver observer); 
-
     }
     class Player : IObservable
     {

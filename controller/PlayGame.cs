@@ -6,14 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 
-
 namespace BlackJack.controller
 {
-    public interface IObserver
-    {
-        void Subscribe(IObservable observable);
-        void Notify(); 
-    }
+
     class PlayGame : IObserver
     {
             private view.IView a_view;

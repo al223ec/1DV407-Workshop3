@@ -47,7 +47,10 @@ namespace BlackJack.view
 
         public override void DisplayCard(model.Card a_card)
         {
-            System.Console.WriteLine("{0} of {1}", a_card.GetValue(), a_card.GetColor());
+            var value = a_card.GetValue();
+            var color = a_card.GetColor(); 
+
+            System.Console.WriteLine("{0} of {1}", value, color);
         }
 
         public override void DisplayPlayerHand(IEnumerable<model.Card> a_hand, int a_score)
